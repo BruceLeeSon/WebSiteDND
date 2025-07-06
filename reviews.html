@@ -1,119 +1,62 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reviews - D&D Nails</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
-  <link href ="reviews.css" rel="stylesheet">
+  <link href="reviews.css" rel="stylesheet">
 
 </head>
+
 <body>
 
-<header>
-  <a href="index.html" class="logo-link">D&amp;D Nails</a>
-  <nav>
-    <a href="contacts.html">Contact</a>
-  </nav>
-</header>
+  <header>
+    <a href="index.html" class="logo-link">D&amp;D Nails</a>
+    <nav>
+      <a href="contacts.html">Contact</a>
+    </nav>
+  </header>
 
-<main>
-  <h1 style="color:#FFD700; font-size:2rem; margin-bottom:2rem;">Customer Reviews</h1>
+  <main>
+    <h1 style="color:#FFD700; font-size:2rem; margin-bottom:2rem;">Customer Reviews</h1>
 
-  <div class="review-card fadeUp1">
-    <div class="review-stars">★★★★★</div>
-    <div class="reviewer-name">Anna S.</div>
-    <div class="review-text">"Absolutely loved my manicure! The staff was so friendly and the design exceeded my expectations."</div>
-  </div>
+    <div class="review-card fadeUp1">
+      <div class="review-stars">★★★★★</div>
+      <div class="reviewer-name">Anna S.</div>
+      <div class="review-text">"Absolutely loved my manicure! The staff was so friendly and the design exceeded my
+        expectations."</div>
+    </div>
 
-  <div class="review-card fadeUp2">
-    <div class="review-stars">★★★★☆</div>
-    <div class="reviewer-name">Mark T.</div>
-    <div class="review-text">"Great service and very clean environment. I recommend the deluxe pedicure."</div>
-  </div>
+    <div class="review-card fadeUp2">
+      <div class="review-stars">★★★★☆</div>
+      <div class="reviewer-name">Mark T.</div>
+      <div class="review-text">"Great service and very clean environment. I recommend the deluxe pedicure."</div>
+    </div>
 
-  <div class="review-card fadeUp3">
-    <div class="review-stars">★★★★★</div>
-    <div class="reviewer-name">Lily P.</div>
-    <div class="review-text">"Best waxing experience ever! Gentle and professional."</div>
-  </div>
-</main>
+    <div class="review-card fadeUp3">
+      <div class="review-stars">★★★★★</div>
+      <div class="reviewer-name">Lily P.</div>
+      <div class="review-text">"Best waxing experience ever! Gentle and professional."</div>
+    </div>
+  </main>
 
-<script>
-  const lenis = new Lenis({
-    lerp: 0.15,
-    smoothWheel: true,
-    wheelMultiplier: 0.7,
-    smoothTouch: true,
-  });
-  function raf(time) {
-    lenis.raf(time);
+  <script>
+    const lenis = new Lenis({
+      lerp: 0.15,
+      smoothWheel: true,
+      wheelMultiplier: 0.7,
+      smoothTouch: true,
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
     requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-</script>
+  </script>
 
 </body>
+
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reviews - D&D Nails</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
-  <link href ="reviews.css" rel="stylesheet">
-
-</head>
-<body>
-
-<header>
-  <a href="index.html" class="logo-link">D&amp;D Nails</a>
-  <nav>
-    <a href="contacts.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <h1 style="color:#FFD700; font-size:2rem; margin-bottom:2rem;">Customer Reviews</h1>
-
-  <div class="review-card fadeUp1">
-    <div class="review-stars">★★★★★</div>
-    <div class="reviewer-name">Anna S.</div>
-    <div class="review-text">"Absolutely loved my manicure! The staff was so friendly and the design exceeded my expectations."</div>
-  </div>
-
-  <div class="review-card fadeUp2">
-    <div class="review-stars">★★★★☆</div>
-    <div class="reviewer-name">Mark T.</div>
-    <div class="review-text">"Great service and very clean environment. I recommend the deluxe pedicure."</div>
-  </div>
-
-  <div class="review-card fadeUp3">
-    <div class="review-stars">★★★★★</div>
-    <div class="reviewer-name">Lily P.</div>
-    <div class="review-text">"Best waxing experience ever! Gentle and professional."</div>
-  </div>
-</main>
-
-<script>
-  const lenis = new Lenis({
-    lerp: 0.15,
-    smoothWheel: true,
-    wheelMultiplier: 0.7,
-    smoothTouch: true,
-  });
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-</script>
-
-</body>
-</html>
->>>>>>> 5c7fb775292f897cbed22abefbdaa9521fa9c197

@@ -1,216 +1,124 @@
-<<<<<<< HEAD
 body {
-      background-color: #1a1a1a;
-      color: #f7e7b3;
-      font-family: sans-serif;
-      margin: 0; padding: 0;
-    }
-    header {
-      background-color: #111;
-      padding: 1rem 2rem;
-      position: fixed;
-      width: 100%;
-      top: 0; left: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
-    }
-    header a.logo-link {
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: #FFD700;
-      position: relative;
-      user-select: none;
-      transition: filter 0.7s ease;
-      text-decoration: none;
-    }
-    header a.logo-link::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.7), transparent);
-      transform: skewX(-25deg);
-      transition: left 0.7s ease;
-      pointer-events: none;
-    }
-    header a.logo-link:hover::before {
-      left: 125%;
-      transition: left 0.7s ease;
-    }
-    nav a {
-      color: #FFD700;
-      font-weight: 700;
-      text-decoration: none;
-      user-select: none;
-    }
-    main {
-      max-width: 800px;
-      margin: 120px auto 2rem;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    .review-card {
-      background: #222;
-      border-radius: 1rem;
-      padding: 1.5rem 2rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-      opacity: 0;
-      transform: translateY(40px);
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
-    }
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .fadeUp1 {
-      animation-name: fadeUp;
-      animation-duration: 1s;
-      animation-delay: 0.3s;
-    }
-    .fadeUp2 {
-      animation-name: fadeUp;
-      animation-duration: 1s;
-      animation-delay: 0.6s;
-    }
-    .fadeUp3 {
-      animation-name: fadeUp;
-      animation-duration: 1s;
-      animation-delay: 0.9s;
-    }
-    .review-stars {
-      color: #FFD700;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      user-select: none;
-    }
-    .reviewer-name {
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-      color: #f7e7b3;
-    }
-    .review-text {
-      font-style: italic;
-      color: #d7cfae;
-      line-height: 1.5;
-=======
-body {
-      background-color: #1a1a1a;
-      color: #f7e7b3;
-      font-family: sans-serif;
-      margin: 0; padding: 0;
-    }
-    header {
-      background-color: #111;
-      padding: 1rem 2rem;
-      position: fixed;
-      width: 100%;
-      top: 0; left: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
-    }
-    header a.logo-link {
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: #FFD700;
-      position: relative;
-      user-select: none;
-      transition: filter 0.7s ease;
-      text-decoration: none;
-    }
-    header a.logo-link::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.7), transparent);
-      transform: skewX(-25deg);
-      transition: left 0.7s ease;
-      pointer-events: none;
-    }
-    header a.logo-link:hover::before {
-      left: 125%;
-      transition: left 0.7s ease;
-    }
-    nav a {
-      color: #FFD700;
-      font-weight: 700;
-      text-decoration: none;
-      user-select: none;
-    }
-    main {
-      max-width: 800px;
-      margin: 120px auto 2rem;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    .review-card {
-      background: #222;
-      border-radius: 1rem;
-      padding: 1.5rem 2rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-      opacity: 0;
-      transform: translateY(40px);
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
-    }
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .fadeUp1 {
-      animation-name: fadeUp;
-      animation-duration: 1s;
-      animation-delay: 0.3s;
-    }
-    .fadeUp2 {
-      animation-name: fadeUp;
-      animation-duration: 1s;
-      animation-delay: 0.6s;
-    }
-    .fadeUp3 {
-      animation-name: fadeUp;
-      animation-duration: 1s;
-      animation-delay: 0.9s;
-    }
-    .review-stars {
-      color: #FFD700;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      user-select: none;
-    }
-    .reviewer-name {
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-      color: #f7e7b3;
-    }
-    .review-text {
-      font-style: italic;
-      color: #d7cfae;
-      line-height: 1.5;
->>>>>>> 5c7fb775292f897cbed22abefbdaa9521fa9c197
-    }
+  background-color: #1a1a1a;
+  color: #f7e7b3;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header a.logo-link {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #FFD700;
+  position: relative;
+  user-select: none;
+  transition: filter 0.7s ease;
+  text-decoration: none;
+}
+
+header a.logo-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  transform: skewX(-25deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+}
+
+header a.logo-link:hover::before {
+  left: 125%;
+  transition: left 0.7s ease;
+}
+
+nav a {
+  color: #FFD700;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 120px auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.review-card {
+  background: #222;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(40px);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp1 {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+.fadeUp2 {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+}
+
+.fadeUp3 {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+}
+
+.review-stars {
+  color: #FFD700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #f7e7b3;
+}
+
+.review-text {
+  font-style: italic;
+  color: #d7cfae;
+  line-height: 1.5;
+}
