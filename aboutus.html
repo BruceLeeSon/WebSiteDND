@@ -2,96 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us - D&D Nails</title>
-  <link href="style.css" rel="stylesheet" />
-  <style>
-    /* Немного увеличим размер заголовка и текста */
-    .heading {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>About Us - D&D Nails</title>
+    <link href="style.css" rel="stylesheet"/>
+    <style>
+        /* Немного увеличим размер заголовка и текста */
+        .heading {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
 
-    .text {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      max-width: 900px;
-      margin: 0 auto 2rem;
-      color: var(--text-secondary);
-      text-align: justify;
-    }
+        .text {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
 
-    main.section {
-      padding: 3rem 1rem 4rem;
-    }
-  </style>
+        main.section {
+            padding: 3rem 1rem 4rem;
+        }
+    </style>
 </head>
 
 <body id="top">
 
-  <header>
+<header>
     <a href="index.html" class="logo">D&amp;D Nails</a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="contacts.html">Contact</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="aboutus.html" aria-current="page">About Us</a>
+        <a href="index.html">Home</a>
+        <a href="contacts.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="aboutus.html" aria-current="page">About Us</a>
     </nav>
-  </header>
+</header>
 
-  <main class="section">
+<main class="section">
     <h1 class="heading">About Us</h1>
 
     <p class="text">
-      Welcome to <strong>D&amp;D Nails</strong>, your premier destination for luxurious and professional nail care.
-      Established with a passion for beauty and precision, our salon offers an unparalleled experience designed to
-      enhance your natural elegance and confidence.
+        Welcome to <strong>D&amp;D Nails</strong>, your premier destination for luxurious and professional nail care.
+        Established with a passion for beauty and precision, our salon offers an unparalleled experience designed to
+        enhance your natural elegance and confidence.
     </p>
     <p class="text">
-      Our team of highly skilled and certified nail technicians brings years of experience and artistry to every service
-      we provide. We believe that nails are an extension of your personality and style, and we dedicate ourselves to
-      crafting unique, elegant looks tailored specifically for you.
+        Our team of highly skilled and certified nail technicians brings years of experience and artistry to every
+        service
+        we provide. We believe that nails are an extension of your personality and style, and we dedicate ourselves to
+        crafting unique, elegant looks tailored specifically for you.
     </p>
     <p class="text">
-      At D&amp;D Nails, hygiene and safety are our top priorities. We maintain rigorous sterilization standards and use
-      only the highest quality products to ensure your health and satisfaction. From classic manicures and pedicures to
-      intricate nail art and waxing services, every treatment is performed in a relaxed, welcoming environment.
+        At D&amp;D Nails, hygiene and safety are our top priorities. We maintain rigorous sterilization standards and
+        use
+        only the highest quality products to ensure your health and satisfaction. From classic manicures and pedicures
+        to
+        intricate nail art and waxing services, every treatment is performed in a relaxed, welcoming environment.
     </p>
     <p class="text">
-      Our commitment to customer service means that your comfort and happiness are at the heart of everything we do.
-      Whether you seek a quick touch-up or a full day of pampering, our friendly staff will guide you through the best
-      options for your needs and preferences.
+        Our commitment to customer service means that your comfort and happiness are at the heart of everything we do.
+        Whether you seek a quick touch-up or a full day of pampering, our friendly staff will guide you through the best
+        options for your needs and preferences.
     </p>
     <p class="text">
-      We continuously update our techniques and products to stay ahead of industry trends, ensuring you receive the
-      latest and greatest in nail care and design. From seasonal colors to custom designs, we help you express yourself
-      with style and confidence.
+        We continuously update our techniques and products to stay ahead of industry trends, ensuring you receive the
+        latest and greatest in nail care and design. From seasonal colors to custom designs, we help you express
+        yourself
+        with style and confidence.
     </p>
     <p class="text">
-      Thank you for choosing D&amp;D Nails. We look forward to welcoming you and helping you achieve the perfect look
-      for any occasion.
+        Thank you for choosing D&amp;D Nails. We look forward to welcoming you and helping you achieve the perfect look
+        for any occasion.
     </p>
-  </main>
+</main>
 
-  <footer class="footer">
+<footer class="footer">
     <p>© <span data-copyright-year></span> D&amp;D Nails. All rights reserved.</p>
-  </footer>
+</footer>
 
-  <script>
+<script>
     document.querySelector('[data-copyright-year]').textContent = new Date().getFullYear();
 
     const body = document.body;
+
     function applyTheme(theme) {
-      if (theme === 'light') body.classList.add('light');
-      else body.classList.remove('light');
+        if (theme === 'light') body.classList.add('light');
+        else body.classList.remove('light');
     }
+
     function loadTheme() {
-      return localStorage.getItem('theme') || 'dark';
+        return localStorage.getItem('theme') || 'dark';
     }
+
     applyTheme(loadTheme());
-  </script>
+</script>
 
 </body>
 
