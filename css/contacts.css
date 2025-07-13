@@ -150,54 +150,9 @@ iframe {
 
 /* Светлая тема */
 
-body.light {
-    background-color: #fef9f0;
-    color: #4a3c00;
-}
 
-body.light header {
-    background-color: #f0e8d0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-body.light .logo {
-    color: #b37f00;
-}
-
-body.light .logo.shine:hover {
-    color: #4a3c00;
-    text-shadow: none;
-}
-
-body.light nav {
-    justify-content: flex-end;
-}
-
-body.light nav a.btn {
-    background-color: #b37f00;
-    color: #fef9f0;
-    max-width: 140px;
-}
-
-body.light nav a.btn:hover {
-    background-color: #7f5c00;
-    color: #fff;
-}
 
 /* В светлой теме - ссылки без градиента, простой цвет для читаемости */
-
-body.light .contact-item a {
-    background: none !important;
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: unset !important;
-    color: #5a4a00;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-body.light iframe {
-    box-shadow: 0 10px 25px rgba(179, 127, 0, 0.3);
-}
 
 /* Адаптив для маленьких экранов */
 

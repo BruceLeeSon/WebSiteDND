@@ -67,6 +67,24 @@
     requestAnimationFrame(raf);
 </script>
 
+
+<script>
+    document.querySelector('[data-copyright-year]').textContent = new Date().getFullYear();
+
+    const body = document.body;
+
+    function applyTheme(theme) {
+        if (theme === 'light') body.classList.add('light');
+        else body.classList.remove('light');
+    }
+
+    function loadTheme() {
+        return localStorage.getItem('theme') || 'dark';
+    }
+
+    applyTheme(loadTheme());
+</script>
+
 </body>
 
 </html>

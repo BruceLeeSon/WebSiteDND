@@ -19,7 +19,7 @@ body {
 }
 
 body.light {
-    --bg: #f6f6f6;
+        --bg: #f6f6f6;
     --text-color: #111;
     --card-bg: #fff;
     --accent-color: #d4af37;
