@@ -20,34 +20,6 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-header a.logo-link {
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: #FFD700;
-    position: relative;
-    user-select: none;
-    transition: filter 0.7s ease;
-    text-decoration: none;
-}
-
-header a.logo-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.7), transparent);
-    transform: skewX(-25deg);
-    transition: left 0.7s ease;
-    pointer-events: none;
-}
-
-header a.logo-link:hover::before {
-    left: 125%;
-    transition: left 0.7s ease;
-}
-
 nav a {
     color: #FFD700;
     font-weight: 700;
