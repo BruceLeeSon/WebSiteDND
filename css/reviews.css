@@ -6,27 +6,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #111;
-    padding: 1rem 2rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-nav a {
-    color: #FFD700;
-    font-weight: 700;
-    text-decoration: none;
-    user-select: none;
-}
-
 main {
     max-width: 800px;
     margin: 120px auto 2rem;
@@ -86,7 +65,7 @@ main {
 .reviewer-name {
     font-weight: 700;
     margin-bottom: 0.7rem;
-    color: var(--accent-color);
+    color: var(--text-primary);
 }
 
 .review-text {
