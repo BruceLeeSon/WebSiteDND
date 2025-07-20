@@ -35,7 +35,7 @@ main {
 }
 
 .review-card {
-    background: #222;
+    background: var(--card-bg);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
     margin-bottom: 1.5rem;
@@ -86,11 +86,11 @@ main {
 .reviewer-name {
     font-weight: 700;
     margin-bottom: 0.7rem;
-    color: #f7e7b3;
+    color: var(--accent-color);
 }
 
 .review-text {
     font-style: italic;
-    color: #d7cfae;
+    color: var(--text-color);
     line-height: 1.5;
 }

@@ -123,6 +123,13 @@ nav a:focus {
     transition: color 0.4s;
 }
 
+.section-title {
+    color: var(--text-primary);
+    font-size:3rem;
+    margin-bottom:2rem;
+    font-weight: 750;
+}
+
 .section {
     padding: 3rem 1rem 5rem;
     text-align: center;
